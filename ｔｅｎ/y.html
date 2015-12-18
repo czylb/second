@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <link rel="stylesheet" href="yy.css">
+    <style type="text/css">
+          @font-face {font-family: 'iconfont';
+        src: url('iconfont/iconfont.eot'); /* IE9*/
+        src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+        url('iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+    }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:25px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+            color: #442A2B;
+        }
+        .iconfont:hover{
+            color: #8F3232;
+            cursor: pointer;
+         }   
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div class="header">
+        </div>
+        <div class="centrl"><!-- 中央页面 -->
+            <div class="logo">Enigmatico</div> 
+            <div class="in">
+                <a href="#">sign in</a>
+            </div>
+            <div class="up">
+                <a href="#">sign up</a>
+            </div>
+            <div class="fol">
+            Follow us:
+            <i class="iconfont">&#xe600;</i>
+            <i class="iconfont">&#xe602;</i>
+            <i class="iconfont">&#xe600;</i>
+            <i class="iconfont">&#xe649;</i>
+            </div>
+            <div class="back"><!-- 三级导航块 -->
+                <div class = "nav">
+                    <ul>
+                        <li class="one"><a href ="#">Home page</a><li>
+                        <li class="one"><a href="#">About us</a>
+                            <ul>
+                                <li class="two"><a href="#">Consectetur</a></li>
+                                <li class="two"><a href="#">Vehicula</a></li>
+                                <li class="two"><a href="#">Sit Dapidus</a>
+                                    <ul>
+                                        <li class="three"><a href="#">Information</a></li>
+                                        <li class="three"><a href="#">Gourmet</a></li>
+                                        <li class="three"><a href="#">Cuisine</a></li>
+                                        <li class="three"><a href="#">Puppet opera</a></li>
+                                    </ul>
+                                </li>
+                                <li class="two"><a href="#"></a>Consectetur</li>
+                                <li class="two"><a href="#"></a>Vehicula Sit</li>
+                                <li class="two"><a href="#"></a>Dapidus Ligula</li>
+                                <li class="two"><a href="#"></a>Sound Good</li>
+                            </ul>
+                        </li>
+                        <li class="one"><a href="#">Photo gallery</a></li>
+                        <li class="one"><a href="#">Blog</a></li>
+                        <li class="one"><a href="#">E-shop</a></li>
+                        <li class="one"><a href="#">Contact us</a></li>
+                    </ul>
+               </div>
+            </div><!-- 三级导航到此为止 -->
+            <div class="background"><!-- 以下是背景图里的内容 -->
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+            <div class="shape"></div><!-- 不规则图形阴影 -->
+            <div class="ph"></div>
+            <div class="nu">
+                <img src="picture/nu.gif">
+            </div> 
+            <div class="footer">
+                <div class="are"></div>
+                <div class="mo">
+                    <a href="#">More information</a>
+                    <i class="iconfont">&#xe633;</i>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script type="text/javascript">
+        var tab1=document.querySelector('.circle1');
+        var tab2=document.querySelector('.circle2');
+        var show=document.querySelector('.background');
+        tab1.addEventListener('click',function(){
+            tab1.style.backgroundColor="#FFFFFF"
+            tab2.style.backgroundColor="#CFB98E"
+            show.style.backgroundImage="url('picture/background.jpg')";
+        })
+        tab2.addEventListener('click',function(){
+            tab2.style.backgroundColor="#FFFFFF"
+            tab1.style.backgroundColor="#CFB98E"
+            show.style.backgroundImage="url('picture/back.jpg')";
+        })
+    </script>
+</body>
+</html>
